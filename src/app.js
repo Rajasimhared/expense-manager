@@ -9,8 +9,6 @@ import "./styles/styles.scss";
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: "Water bill", amount: 600 }));
-
 const App = (
   <Provider store={store}>
     <AppRouter />
