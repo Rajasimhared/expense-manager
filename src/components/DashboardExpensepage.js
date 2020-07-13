@@ -1,4 +1,13 @@
 import React from "react";
-const DashboardExpensePage = () => <div>Expense manager</div>;
+import ExpenseList from "./ExpenseList";
+import ExpenseListFilters from "./ExpenseListFilters.js";
+
+const DashboardExpensePage = () => (
+  <div>
+    Expense manager
+    <ExpenseListFilters />
+    <ExpenseList />
+  </div>
+);
 
 export default DashboardExpensePage;
